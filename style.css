@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.hero {
+  position: relative;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  width: 100%;
+  color: white;
+}
+
+.hero::before {
+  content: "";
+  background-image: url("./assets/images/hero-background.jpeg");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+}
+
+.hero span {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 400;
+  text-shadow: 0px 1px 8px black;
+}
+
+.hero h1 {
+  position: relative;
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  font-size: 4.8rem;
+  text-shadow: 0px 1px 8px black;
+}
+
+.logo {
+  position: absolute;
+  bottom: -9rem;
+  z-index: 90;
+}
+
+.features {
+  padding-top: 12rem;
+  background-color: #06a9b6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  color: black;
+}
+
+.bottom-shape {
+  width: 100%;
+}
+
+.features h2 {
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  font-size: 4.8rem;
+}
+
+.features p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  max-width: 700px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.features-container {
+  padding-top: 8rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  max-width: 400px;
+  line-height: 1.5;
+}
+
+.gallery {
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 8rem 2rem;
+  background-color: #bebebe;
+}
+
+.card {
+  border-radius: 4px;
+  max-width: 400px;
+}
+
+footer {
+  position: relative;
+  background-color: #502d00;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16rem;
+  width: 100%;
+  text-shadow: 0px 2px 4px black;
+  padding: 10rem;
+}
+
+footer::before {
+  content: "";
+  background-image: url("./assets/images/footer-background.jpeg");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.4;
+}
+
+.footer-card span,
+h3,
+p {
+  position: relative;
+}
+
+.footer-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16rem;
+}
+
+.footer-card span {
+  font-family: "Kalam", cursive;
+  font-weight: bold;
+  font-size: 3.2rem;
+}
+.footer-card h3 {
+  font-family: "Kalam", cursive;
+  font-size: 4.8rem;
+}
+
+.footer-card p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  max-width: 500px;
+}
+
+.map {
+  position: relative;
+}
+
+.social-links {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 2rem;
+  font-size: 1.6rem;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.social-links a img {
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+
+.signature {
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  bottom: 8px;
+}
+.signature a {
+  text-decoration: none;
+  color: white;
+}
